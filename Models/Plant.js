@@ -1,5 +1,16 @@
 const mongoose = require('../db/connection')
 
-const noteSchema = new mongoose.Schema({})
+const plantSchema = new mongoose.Schema({
+    name: String,
+    genus: String,
+    timer: Number,
+    zone: String,
+    water: String,
+    image:String,
+    lightRequired: String,
+    notes: String,
+    fertilizer: String,
+    houseplant: Boolean
+})
 
-module.exports = mongoose.model('Plant', plantSchema)
+module.exports = mongoose.model('Plant', plantSchema);

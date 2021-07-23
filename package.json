@@ -1,0 +1,26 @@
+{
+  "name": "plant-daddy-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plant-Daddies/plantDaddies-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plant-Daddies/plantDaddies-backend/issues"
+  },
+  "homepage": "https://github.com/Plant-Daddies/plantDaddies-backend#readme"
+}
