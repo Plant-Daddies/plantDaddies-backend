@@ -3,12 +3,11 @@ const seedData = require('./seedData.json')
 
 Plant.deleteMany({})
 .then(() => {
-    return seedData.map((plant)=>{
-        Plant.insertMany(plant);
-    })
+    return Plant.insertMany(seedData)
  })
     .then(console.log)
     .catch(console.error)
     .finally(()=>{
         process.exit()
     })
+

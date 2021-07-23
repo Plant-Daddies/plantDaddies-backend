@@ -8,7 +8,7 @@ app.use(methodOverride('_method'))
 app.use(express.json())
 
 app.use(express.urlencoded({ extended: true }))
-app.use('/', plantController)
+app.use('/plants', plantController)
  
 app.set("port", process.env.PORT || 4000)
 app.listen(app.get('port'), () => {console.log(`Listening on ${app.get('port')}`)})

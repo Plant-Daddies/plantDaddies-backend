@@ -13,4 +13,4 @@ const plantSchema = new mongoose.Schema({
     houseplant: Boolean
 })
 
-module.exports = mongoose.model('Plant', plantSchema)
+module.exports = mongoose.model('Plant', plantSchema);

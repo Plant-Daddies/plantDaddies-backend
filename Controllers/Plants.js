@@ -1,10 +1,12 @@
 const express = require ('express')
-const Plant = '../Models/Plant.js'
 const router = express.Router()
+const Plant = require('../Models/Plant.js')
+
 
 // INDEX
 router.get('/', (req,res)=> {
     res.send('hello')
+    
 })
 
 // router.get('/index', (req, res) => {
@@ -14,6 +16,7 @@ router.get('/', (req,res)=> {
 //             res.json(plants)
 //         })
 // })
+
 // Create
 // router.post('/create', (req,res, next)=> {
 //     console.log(req.body)
