@@ -1,3 +1,4 @@
+
 const express = require ('express')
 const router = express.Router()
 const Plant = require('../Models/Plant.js')
@@ -9,13 +10,13 @@ router.get('/', (req,res)=> {
     
 })
 
-// router.get('/index', (req, res) => {
-//     Plant.find({})
-//         .then(plants => {
-//             console.log(plants)
-//             res.json(plants)
-//         })
-// })
+router.get('/index', (req, res) => {
+    Plant.find({})
+        .then(plants => {
+            console.log(plants)
+            res.json(plants)
+        })
+})
 
 // Create
 // router.post('/create', (req,res, next)=> {
