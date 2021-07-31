@@ -94,8 +94,11 @@ router.delete('/delete/:id', (req, res, next) => {
     Plant.findOneAndDelete(
         {_id: id}
     )
-    .then(res.redirect('/plants/'))
-    // if theres an error pass that bad boy on
+    .then(_=>{
+        Plant.find()
+        .then(plants => {
+            res.json({message: 'success', plants})})
+        })    
     .catch(next)
 })
 
